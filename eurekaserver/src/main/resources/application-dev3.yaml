@@ -1,0 +1,15 @@
+server:
+  port: 9003
+eureka:
+  instance:
+    appname: EUREKA_SERVER
+    hostname: euk3.com
+  server:
+    enable-self-preservation: true
+    #my-url: eurekaserver
+
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://euk1.com:9001/eureka/,http://euk2.com:9002/eureka/,http://euk3.com:9003/eureka/
+
